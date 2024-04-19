@@ -1,23 +1,31 @@
 # This CITATION.cff file was generated with cffinit.
 # Visit https://bit.ly/cffinit to generate yours today!
+
 cff-version: 1.2.0
 title: >-
-  Replication data and code for the article Cultural character of European countries and reaction to the COVID-19 crisis (v1.0).
+  Replication data and code for the article Cultural
+  character of European countries and reaction to the
+  COVID-19 crisis (v1.0).
 message: 'If you use this software, please cite it as below.'
 type: dataset
 authors:
   - family-names: Štebe
-    given-names: Janez
-    orcid: 'https://orcid.org/0000-0001-6799-8088'
+  - given-names: Janez
+  - orcid: 'https://orcid.org/0000-0001-6799-8088'
 url: 'https://github.com/jsjsjs001/Collectivism_covid-19_SSD2024'
-abstract: >
-The analysis of various kinds of data from different existing sources, merged on the country level, related to COVID-19. Depending on the source, it contains world or selection of European coutries. Collectivism, attitudes regarding freedoms, political trust, and conspiracy beliefs' will be published at Slovene Sociological Association's (SSD) journal Družboslovne razprave (Social Science Forum) in the next issue. Different types of data from existing sources were combined on the level of a country as a unit of analysis (Hofstede 2011; Erikson 2021; European Parliament 2021; European Commission 2021, 2022; Google LLC 2021).
-keywords:
-  - collectivism
-  - tightness 
-  - freedom
-  - COVID-19
-  - vaccination
+abstract: >-
+  The analysis of various kinds of data from different
+  existing sources, merged on the country level, related to
+  COVID-19. Depending on the source, it contains world or
+  selection of European coutries. Collectivism, attitudes
+  regarding freedoms, political trust, and conspiracy
+  beliefs' will be published at Slovene Sociological
+  Association's (SSD) journal Družboslovne razprave (Social
+  Science Forum) in the next issue. Different types of data
+  from existing sources were combined on the level of a
+  country as a unit of analysis (Hofstede 2011; Erikson
+  2021; European Parliament 2021; European Commission 2021,
+  2022; Google LLC 2021).
 license: CC-BY-4.0
 version: 1.0.0
 date-released: '2024-04-19'
