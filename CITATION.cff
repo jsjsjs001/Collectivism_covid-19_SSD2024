@@ -9,9 +9,9 @@ title: >-
 message: 'If you use this software, please cite it as below.'
 type: dataset
 authors:
-  - family-names: Štebe
-    given-names: Janez
-    orcid: 'https://orcid.org/0000-0001-6799-8088'
+- family-names: Štebe
+  given-names: Janez
+  orcid: 'https://orcid.org/0000-0001-6799-8088'
 url: 'https://github.com/jsjsjs001/Collectivism_covid-19_SSD2024'
 abstract: >-
   The analysis of various kinds of data from different
