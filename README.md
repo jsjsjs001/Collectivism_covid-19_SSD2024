@@ -15,4 +15,5 @@ References to the data sources:
 •	Google LLC (2021): Google COVID-19 Community Mobility Reports. Poročila o mobilnosti v skupnosti za COVID-19. mobility_report_countries_2021.xlsx. Accessible on: https://www.google.com/covid19/mobility/ (3. 11. 2022).
 •	Hofstede, Geert (2011): Dimensionalizing Cultures: The Hofstede Model in Context. Online Readings in Psychology and Culture, 2 (1). https://doi.org/10.9707/2307-0919.1014 (28. 8. 2023).
 •	Hofstede, Geert (2015): Dimension data matrix. Accessible on: https://geerthofstede.com/wp-content/uploads/2016/08/6-dimensions-for-website-2015-08-16.csv (28. 8. 2023).
+•	Oxford COVID-19 Government Response Tracker, Blavatnik School of Government, University of Oxford.
 
