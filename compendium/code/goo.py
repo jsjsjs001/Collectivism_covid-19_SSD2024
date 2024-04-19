@@ -9,13 +9,18 @@ import matplotlib.pyplot as plt
 import country_converter as coco 
 
 import pyreadstat
+#importing the os module
+import os
 
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
 # https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md 
 #https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md#codebook-for-the-oxford-covid-19-government-response-tracker#
 # Codebook for the Oxford Covid-19 Government Response Tracker
 #url = "https://github.com/OxCGRT/covid-policy-tracker/blob/18eb781dcb3427e63c5b756852a3b66be38e6efc/data/OxCGRT_nat_latest.csv"
 #url = "https://github.com/OxCGRT/covid-policy-tracker/blob/master/data/OxCGRT_nat_latest.csv"
-url = "../../covid_19_delo/Serban_a/country_level_data/mobility_report_countries_2021.xlsx"
+url = "mobility_report_countries_2021.xlsx"
 df1 = pd.read_excel(url)
 
 with pd.option_context('display.max_rows', None,
@@ -64,7 +69,7 @@ column_names_to_labels = {'Continent_Code' : None,'Three_Letter_Country_Code': '
 
 print(df2)
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Goo_nat.sav'
+path = 'Goo_nat.sav'
 pyreadstat.write_sav(df2, path, column_labels=column_names_to_labels)
 
 #df1[df1['CountryCode'] == 'FRA'].set_index('Date')['PopulationVaccinated'].plot(kind='line', figsize=(12,8))

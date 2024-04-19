@@ -14,10 +14,14 @@ import pyreadstat
 import plotly.express as px 
 
 import scipy.stats
+#importing the os module
+import os
 
-#%matplotlib inline
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Merge_all.sav'
+path = 'Merge_all.sav'
 df1, meta = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -77,13 +81,13 @@ print(data.corr())
 corr_data= data.corr()
 
 # determining the name of the file
-path = '../../covid_19_delo/Serban_a/country_level_data/korelacije1.xlsx'
+path = 'korelacije1.xlsx'
   
 # saving the excel
 corr_data.to_excel(path)
 
 # izpis podatokv v *sav
-path = '../../covid_19_delo/Serban_a/country_level_data/Merge_all_num.sav'
+path = 'Merge_all_num.sav'
 pyreadstat.write_sav(df1, path)
 #df1['LIMITATION_INDIVIDUAL_FREEDOMS_JUSTIFIED'] = df1['LIMITATION_INDIVIDUAL_FREEDOMS_JUSTIFIED'] * 100
 #df1.plot(x="Three_Letter_Country_Code", y=["Mobility_Total"], kind="bar")

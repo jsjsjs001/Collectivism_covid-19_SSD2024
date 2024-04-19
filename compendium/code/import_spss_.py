@@ -6,10 +6,13 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import country_converter as coco 
+#importing the os module
+import os
 
-#dir = ('c:\Users\stebej\OneDriveUL2021\OneDrive - Univerza v Ljubljani\covid_19_delo\Serban_a\country_level_data\')
-
-df, meta = pyreadstat.read_sav('../../covid_19_delo/Serban_a/country_level_data/Metanorms_and_other_country_measures.sav')
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
+df, meta = pyreadstat.read_sav('Metanorms_and_other_country_measures.sav')
 print(type(df),"\n")
 print(type(meta),"\n")
 print(df.head(),"\n")

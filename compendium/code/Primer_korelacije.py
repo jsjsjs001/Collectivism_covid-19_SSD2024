@@ -13,11 +13,14 @@ import pyreadstat
 
 import plotly.express as px 
 
+#importing the os module
+import os
 
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
 
-#%matplotlib inline
-
-path = '../../covid_19_delo/Serban_a/country_level_data/Merge_all.sav'
+path = 'Merge_all.sav'
 df1, meta = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -63,7 +66,7 @@ print(data.corr())
 corr_data= data.corr()
 
 # determining the name of the file
-path = '../../covid_19_delo/Serban_a/country_level_data/korelacije.xlsx'
+path = 'korelacije.xlsx'
   
 # saving the excel
 corr_data.to_excel(path)

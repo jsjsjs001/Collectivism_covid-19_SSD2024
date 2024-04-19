@@ -5,6 +5,12 @@ import numpy as np
 import wbgapi as wb   # I use wb as a namespace in all my work
 
 import pyreadstat
+#importing the os module
+import os
+
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
 
 wb_info= wb.source.info() # especially useful for seeing what databases are available
 
@@ -101,7 +107,7 @@ column_names_to_labels = {'Continent_Code' : None,'Three_Letter_Country_Code': '
 #column_names_to_labels = {'SiteCountry': 'Country name', 'CountryISO': 'Country abbreviation', 'Continent': None}
 # https://ofajardo.github.io/pyreadstat_documentation/_build/html/index.html#metadata-object-description 
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Country_measures_gini.sav'
+path = 'Country_measures_gini.sav'
 pyreadstat.write_sav(df2, path, column_labels=column_names_to_labels)
 
 #itanic["Age"] > 35
@@ -120,8 +126,6 @@ pyreadstat.write_sav(df2, path, column_labels=column_names_to_labels)
 
 
 #df, meta = pyreadstat.read_dta(dtafile)
-
-#df, meta = pyreadstat.read_sav('../../covid_19_delo/Serban_a/country_level_data/Metanorms_and_other_country_measures.sav')
 
 
 

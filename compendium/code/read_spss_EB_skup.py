@@ -2,10 +2,14 @@ import pandas as pd
 
 import pyreadstat
 import country_converter as coco 
+#importing the os module
+import os
 
-#dir = ('c:\Users\stebej\OneDriveUL2021\OneDrive - Univerza v Ljubljani\covid_19_delo\Serban_a\country_level_data\')
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
 
-df, meta = pyreadstat.read_sav('../../covid_19_delo/Serban_a/country_level_data/ZA7738_v1-0-0.sav')
+df, meta = pyreadstat.read_sav('ZA7738_v1-0-0.sav')
 print(type(df),"\n")
 print(type(meta),"\n")
 print(df.head(),"\n")
@@ -118,7 +122,7 @@ column_names_to_labels = {'Three_Letter_Country_Code': 'Country abbreviation', '
 #####################################################################################################################
 
 
-df, meta = pyreadstat.read_sav('../../covid_19_delo/Serban_a/country_level_data/ZA7771_v1-0-0.sav')
+df, meta = pyreadstat.read_sav('ZA7771_v1-0-0.sav')
 print(type(df),"\n")
 print(type(meta),"\n")
 print(df.head(),"\n")
@@ -222,5 +226,5 @@ print(df2)
 #column_names_to_labels = {'SiteCountry': 'Country name', 'CountryISO': 'Country abbreviation', 'Continent': None}
 # https://ofajardo.github.io/pyreadstat_documentation/_build/html/index.html#metadata-object-description 
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Eu_Par_COVID-19_Survey.sav'
+path = 'Eu_Par_COVID-19_Survey.sav'
 pyreadstat.write_sav(df2, path, column_labels=column_names_to_labels)

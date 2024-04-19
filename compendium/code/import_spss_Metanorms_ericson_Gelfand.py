@@ -6,10 +6,14 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import country_converter as coco 
+#importing the os module
+import os
 
-#dir = ('c:\Users\stebej\OneDriveUL2021\OneDrive - Univerza v Ljubljani\covid_19_delo\Serban_a\country_level_data\')
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
 
-df, meta = pyreadstat.read_sav('../../covid_19_delo/Serban_a/country_level_data/Metanorms_and_other_country_measures.sav')
+df, meta = pyreadstat.read_sav('Metanorms_and_other_country_measures.sav')
 print(type(df),"\n")
 print(type(meta),"\n")
 print(df.head(),"\n")
@@ -56,5 +60,5 @@ column_names_to_labels = {'Three_Letter_Country_Code': 'Country abbreviation', '
     'Hofstede_Individualism' : 'Hofstede_Individualism - limited N of countries' ,
       }
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Metanorms_Tightness.sav'
+path = 'Metanorms_Tightness.sav'
 pyreadstat.write_sav(df2, path, column_labels=column_names_to_labels)

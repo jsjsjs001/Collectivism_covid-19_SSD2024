@@ -15,13 +15,14 @@ import os
 directory = os.getcwd()
 print('tole: ', directory, ' konec')
 # set current working directory
-os.chdir('c:/Users/stebej/OneDrive - Univerza v Ljubljani/Collectivism_covid-19_SSD2024/compendium/code/')
-dir1 = os.getcwd()
-print('tole 1: ', dir1, ' konec')
+
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
 
 # read data file with missing values included, and with numeric values
 
-path = '../podatki/Country_measures.sav'
+path = 'Country_measures.sav'
 df, meta = pyreadstat.read_sav(path)
 print(type(df),"\n")
 print(type(meta),"\n")
@@ -30,7 +31,7 @@ print(meta.column_names_to_labels,"\n")
 print(meta.variable_value_labels,"\n")
 print(df)
 
-path = '../podatki/Country_measures_gini.sav'
+path = 'Country_measures_gini.sav'
 df1, meta1 = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -65,7 +66,7 @@ print(column_names_to_labels)
 
 #*********************next file to merge 1 ********************************************************
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Metanorms_Tightness.sav'
+path = 'Metanorms_Tightness.sav'
 df1, meta1 = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -97,7 +98,7 @@ print(df)
 
 #*********************next file to merge 2 ********************************************************
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Uz.sav'
+path = 'Uz.sav'
 df1, meta1 = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -131,7 +132,7 @@ print(df[df['Continent_Code'] == 'EU'])
 
 #*********************next file to merge 3 ********************************************************
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Hofstede.sav'
+path = 'Hofstede.sav'
 df1, meta1 = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -176,7 +177,7 @@ print(df[df['Continent_Code'] == 'EU'])
 
 #*********************next file to merge 4 ********************************************************
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Eu_Par_COVID-19_Survey.sav'
+path = 'Eu_Par_COVID-19_Survey.sav'
 df1, meta1 = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -225,7 +226,7 @@ print(df[df['Continent_Code'] == 'EU'])
 
 #*********************next file to merge 5 ********************************************************
 
-path = '../../covid_19_delo/Serban_a/country_level_data/EB3_Survey.sav'
+path = 'EB3_Survey.sav'
 df1, meta1 = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -275,7 +276,7 @@ print(df[df['Continent_Code'] == 'EU'])
 
 #*********************next file to merge 6 ********************************************************
 
-path = '../../covid_19_delo/Serban_a/country_level_data/OxCGRT_nat.sav'
+path = 'OxCGRT_nat.sav'
 df1, meta1 = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -320,7 +321,7 @@ print(df[df['Continent_Code'] == 'EU'])
 
 #*********************next file to merge 6 ********************************************************
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Goo_nat.sav'
+path = 'Goo_nat.sav'
 df1, meta1 = pyreadstat.read_sav(path)
 print(type(df1),"\n")
 print(type(meta),"\n")
@@ -364,6 +365,6 @@ print(df)
 print(df[df['Continent_Code'] == 'EU'])
 
 
-path = '../../covid_19_delo/Serban_a/country_level_data/Merge_all.sav'
+path = 'Merge_all.sav'
 pyreadstat.write_sav(df, path, column_labels=column_names_to_labels)
 

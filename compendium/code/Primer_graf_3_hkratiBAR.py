@@ -7,20 +7,21 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-
-import wbgapi as wb   # I use wb as a namespace in all my work
+# import wbgapi as wb   # I use wb as a namespace in all my work
 
 import pyreadstat
 
 import plotly.express as px 
-import geopandas as gpd
+# import geopandas as gpd
 import matplotlib.pyplot as plt
+#importing the os module
+import os
 
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
 
-
-#%matplotlib inline
-
-path = '../../covid_19_delo/Serban_a/country_level_data/Merge_all_num_SI_imena.sav'
+path = 'Merge_all_num_SI_imena.sav'
 df2, meta = pyreadstat.read_sav(path)
 
 

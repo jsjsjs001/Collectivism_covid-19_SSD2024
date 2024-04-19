@@ -9,12 +9,19 @@ import matplotlib.pyplot as plt
 
 import pyreadstat
 
+#importing the os module
+import os
+
+#change current working directory to 'data'
+os.chdir('compendium/podatki')
+#dir1 = os.getcwd()
+
 # https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md 
 #https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md#codebook-for-the-oxford-covid-19-government-response-tracker#
 # Codebook for the Oxford Covid-19 Government Response Tracker
 #url = "https://github.com/OxCGRT/covid-policy-tracker/blob/18eb781dcb3427e63c5b756852a3b66be38e6efc/data/OxCGRT_nat_latest.csv"
 #url = "https://github.com/OxCGRT/covid-policy-tracker/blob/master/data/OxCGRT_nat_latest.csv"
-url = "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_nat_latest.csv"
+url = "OxCGRT_nat_latest.csv"
 df1 = pd.read_csv(url)
 
 with pd.option_context('display.max_rows', None,
@@ -104,7 +111,7 @@ column_names_to_labels = {'Continent_Code' : None,'Three_Letter_Country_Code': '
 
 
 
-path = '../../covid_19_delo/Serban_a/country_level_data/OxCGRT_nat.sav'
+path = 'OxCGRT_nat.sav'
 pyreadstat.write_sav(df2, path, column_labels=column_names_to_labels)
 
 
