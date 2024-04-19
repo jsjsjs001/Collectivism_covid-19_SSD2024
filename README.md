@@ -7,6 +7,12 @@ Different types of data from existing sources were combined on the level of a co
 
 The analysis uses two-dimensional graphs of countries’ positions and Pearson correlations. Measures of cultural orientations were extended and also includes country aggregate measures of trust in government, attitudes regarding freedom, and how common conspiracy beliefs are. 
 
+The following files need to be replaced in the working data directory from original source. They are made empty by striping all cases out. 
+
+ZA7771_v1-0-0.sav
+ZA7738_v1-0-0.sav
+ZA7782_v1-0-0.sav
+
 References to the data sources:
 
 •	European Commission, Brussels (2021): Eurobarometer 95.2. GESIS, Cologne. ZA7782 Data file Version 1.0.0. https://doi.org/10.4232/1.13884 (28. 8. 2023).
