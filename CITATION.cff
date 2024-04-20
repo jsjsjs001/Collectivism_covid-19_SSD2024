@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Štebe"
+  given-names: "Janez"
+  orcid: "https://orcid.org/0000-0001-6799-8088"
+title: "Replication data and code for the article Cultural
+  character of European countries"
+version: 1.0.0
+doi: 10.5281/zenodo.11000658
+abstract: >-
+  The analysis of various kinds of data from different
+  existing sources, merged on the country level, related to
+  COVID-19. Depending on the source, it contains world or
+  selection of European coutries. Collectivism, attitudes
+  regarding freedoms, political trust, and conspiracy
+  beliefs' will be published at Slovene Sociological
+  Association's (SSD) journal Družboslovne razprave (Social
+  Science Forum), in the next issue. 
+keywords:
+  - Research Data Archiving
+  - COVID-19
+  - Cultural characteristics
+  - Europe
+license: CC-BY-4.0
+date-released: 2024-04-19
+url: "https://github.com/jsjsjs001/Collectivism_covid-19_SSD2024"
