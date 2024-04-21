@@ -17,11 +17,16 @@ OxCGRT_nat_latest.csv
 
 References to the data sources:
 
-•	European Commission, Brussels (2021): Eurobarometer 95.2. GESIS, Cologne. ZA7782 Data file Version 1.0.0. https://doi.org/10.4232/1.13884 (28. 8. 2023).
-•	European Commission, Brussels (2022): Flash Eurobarometer 494 (Attitudes on Vaccination against Covid-19). GESIS, Cologne. ZA7771 Data file Version 1.0.0. https://doi.org/10.4232/1.13786 (28. 8. 2023).
-•	European Parliament, Directorate-General for Communication, Public Opinion Monitoring Unit (2021): European Parliament COVID-19 Survey – Round 3. GESIS Data Archive, Cologne. ZA7738 Data file Version 1.0.0. https://doi.org/10.4232/1.13710 (28. 8. 2023). 
+•	European Commission, Brussels (2021): Eurobarometer 95.2. GESIS, Cologne. ZA7782 Data file Version 1.0.0. https://doi.org/10.4232/1.13884
+
+•	European Commission, Brussels (2022): Flash Eurobarometer 494 (Attitudes on Vaccination against Covid-19). GESIS, Cologne. ZA7771 Data file Version 1.0.0. https://doi.org/10.4232/1.13786 
+
+•	European Parliament, Directorate-General for Communication, Public Opinion Monitoring Unit (2021): European Parliament COVID-19 Survey – Round 3. GESIS Data Archive, Cologne. ZA7738 Data file Version 1.0.0. https://doi.org/10.4232/1.13710 
+
 •	Google LLC (2021): Google COVID-19 Community Mobility Reports. Poročila o mobilnosti v skupnosti za COVID-19. mobility_report_countries_2021.xlsx. Accessible on: https://www.google.com/covid19/mobility/ (3. 11. 2022).
-•	Hofstede, Geert (2011): Dimensionalizing Cultures: The Hofstede Model in Context. Online Readings in Psychology and Culture, 2 (1). https://doi.org/10.9707/2307-0919.1014 (28. 8. 2023).
-•	Hofstede, Geert (2015): Dimension data matrix. Accessible on: https://geerthofstede.com/wp-content/uploads/2016/08/6-dimensions-for-website-2015-08-16.csv (28. 8. 2023).
+•	Hofstede, Geert (2011): Dimensionalizing Cultures: The Hofstede Model in Context. Online Readings in Psychology and Culture, 2 (1). https://doi.org/10.9707/2307-0919.1014 
+
+•	Hofstede, Geert (2015): Dimension data matrix. Accessible on: https://geerthofstede.com/wp-content/uploads/2016/08/6-dimensions-for-website-2015-08-16.csv 
+
 •	Oxford COVID-19 Government Response Tracker, Blavatnik School of Government, University of Oxford.
 
